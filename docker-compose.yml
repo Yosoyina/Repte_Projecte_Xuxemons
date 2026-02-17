@@ -18,7 +18,9 @@ services:
 
   # Backend (Laravel)
   backend:
-    build: .
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     container_name: xuxemon-backend
     volumes:
       - ./backend:/var/www/html
