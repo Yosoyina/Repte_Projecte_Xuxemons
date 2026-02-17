@@ -30,7 +30,7 @@ services:
       DB_CONNECTION: mysql
       DB_HOST: basedatos
       DB_PORT: 3306
-      DB_DATABASE: xuxemons_basedatos
+      DB_DATABASE: basedatos
       DB_USERNAME: dev_user
       DB_PASSWORD: 1234
     networks:
@@ -44,7 +44,7 @@ services:
     image: mysql:8.0
     container_name: mysql-db
     environment:
-      MYSQL_DATABASE: xuxemons_basedatos
+      MYSQL_DATABASE: basedatos
       MYSQL_USER: dev_user
       MYSQL_PASSWORD: 1234
       MYSQL_ROOT_PASSWORD: root_password
